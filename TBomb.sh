@@ -36,6 +36,8 @@ echo -e "\e[4;31m Please Read Instruction Carefully !!! \e[0m"
 echo " "
 echo "Press 1 To  Start SMS Bomber "
 echo "Press 2 To  Start Call Bomber "
+echo "Press 3 To  Update "
+echo "Press 4 To  View Feature "
 echo "Press 5 To  Exit "
 read ch
 if [ $ch -eq 1 ];then
@@ -48,7 +50,7 @@ exit 0
 elif [ $ch -eq 2 ];then
 clear
 echo -e "\e[1;32m"
-echo 'Call Bomb By SpeedX'> call.xxx
+echo 'Call Bomb By Technical Partha'> call.xxx
 python3 bomber.py call
 rm *.xxx >/dev/null 2>&1
 exit 0
@@ -56,13 +58,13 @@ elif [ $ch -eq 3 ];then
 clear
 apt install git -y
 echo -e "\e[1;34m Downloading Latest Files..."
-git clone https://github.com/TheSpeedX/TBomb
+git clone https://github.com/parthade1234/TBomb
 if [[ -s TBomb/TBomb.sh ]];then
 cd TBomb
 cp -r -f * .. > temp
 cd ..
 rm -rf  TBomb >> temp
-rm update.speedx >> temp
+rm update.Technical Partha >> temp
 rm temp
 chmod +x TBomb.sh
 fi
